@@ -48,10 +48,14 @@ table {
 }
 
 /* Project starts here */
+html {
+    height: 100%;
+}
 
-.body {
+body {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .header {
@@ -131,3 +135,57 @@ table {
 .top-right .yt-icon{
     opacity: 0.85;
 }
+
+.content {
+    background-color: #FFF;
+    display: flex;
+    height: 100%;
+    margin: 24px;
+}
+
+.left {
+    flex: 3;
+    display: flex;
+    padding-right: 24px;
+}
+
+.player-container {
+    flex: 1;
+    padding-bottom: 56.25%;
+    height: 0;
+    position: relative;
+}
+
+.player-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.autoplay {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.autoplay-right {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: Roboto, Arial, sans-serif;
+    color: #606060;
+}
+
+.right img {
+    width: 400px;
+}
+
